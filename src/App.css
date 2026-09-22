@@ -1,0 +1,164 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: #fafafa;
+  color: #222;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 20px 60px;
+  background: white;
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  color: #6f4e37;
+}
+
+.nav-links{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+.primary-btn{
+  background: #6f4e37;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius: 8px;
+  cursor:pointer;
+}
+
+.secondary-btn{
+  background: white;
+  border: 2px solid #6f4e37;
+  color: #6f4e37;
+  padding:12px 20px;
+  border-radius:8px;
+  font-weight: 700;
+  cursor:pointer;
+  transition: 0.2s ease;
+}
+
+.secondary-btn:hover {
+  background: #6f4e37;
+  color: white;
+}
+
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding:80px 60px;
+  gap:50px;
+}
+
+.hero h1{
+  font-size:56px;
+  margin:20px 0;
+  color: #3b2416;
+  font-weight: 800;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.subtitle{
+  color:#666;
+  margin-bottom:25px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:15px;
+}
+
+.hero-image{
+  width:100%;
+  height: 400px;
+  border-radius:20px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+}
+
+/* FEATURED MENU */
+.featured{
+  padding:70px 60px;
+  text-align:center;
+}
+
+.featured h2 {
+  color: #3b2416;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+.featured p {
+  color: #6b625c;
+  font-size: 16px;
+}
+
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  margin-top:40px;
+}
+
+.food-card{
+  background:white;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,.08)
+}
+
+.food-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.food-info{
+  padding:20px;
+}
+.food-info button{
+  width:100%;
+  margin-top:15px;
+  padding:10px;
+  background:#6f4e37;
+  color:white;
+  border:none;
+  border-radius:8px;
+}
+
+/* Footer */
+.footer{
+  background:#222;
+  color:white;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  padding:50px 60px;
+  gap:30px;
+}
