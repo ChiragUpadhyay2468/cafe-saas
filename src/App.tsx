@@ -1,8 +1,10 @@
-import Home from "./pages/Home";
+//import Home from "./pages/Home";
+import MenuPage from "./pages/Menu";
+
 import "./App.css";
 
 function App() {
-  return <Home />;
+  return <MenuPage />;
 }
 
 export default App;

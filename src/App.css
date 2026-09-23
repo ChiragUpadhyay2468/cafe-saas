@@ -162,3 +162,245 @@ body{
   padding:50px 60px;
   gap:30px;
 }
+/* MENU PAGE */
+
+.menu-page{
+  min-height:100vh;
+  background: #f7f3ed;
+  padding: 64px max(24px, 8%);
+}
+
+.menu-hero{
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 42px;
+}
+
+.menu-hero h1{
+  color: #2b1e16;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 56px;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.menu-hero p{
+  color: #746960;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 14px auto 0;
+  max-width: 500px;
+}
+
+.menu-hero .menu-kicker{
+  color: #b6663d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+.menu-controls{
+  max-width: 880px;
+  margin: 0 auto 42px;
+}
+
+.search-field{
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dfd6cd;
+  border-radius: 8px;
+  color-scheme: light;
+  display: flex;
+  padding: 0 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-field:focus-within{
+  border-color: #b6663d;
+  box-shadow: 0 0 0 3px rgba(182, 102, 61, 0.14);
+}
+
+.search-field span{
+  color: #8b7d72;
+  font-size: 28px;
+  line-height: 1;
+  margin-right: 10px;
+}
+
+.menu-controls input{
+  width:100%;
+  padding: 15px 0;
+  background: transparent;
+  border: none;
+  color: #2b1e16;
+  font-size: 16px;
+  outline: none;
+}
+
+.menu-controls input::placeholder{
+  color: #8b7d72;
+  opacity: 1;
+}
+
+.categories{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.categories button{
+  padding: 9px 16px;
+  border: 1px solid #dfd6cd;
+  border-radius: 999px;
+  background: transparent;
+  color: #5d5148;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.categories button:hover{
+  border-color: #b6663d;
+  color: #8c4828;
+}
+
+.categories button.active{
+  background: #3b2416;
+  border-color: #3b2416;
+  color: white;
+}
+
+.menu-summary{
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.menu-summary h2{
+  color: #2b1e16;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.menu-summary p{
+  color: #81736a;
+  font-size: 14px;
+}
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 0;
+}
+
+.card{
+  background: #fff;
+  border: 1px solid #e6ddd4;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(73, 48, 34, 0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover{
+  box-shadow: 0 16px 32px rgba(73, 48, 34, 0.13);
+  transform: translateY(-4px);
+}
+
+.card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body{
+  padding: 18px 18px 20px;
+}
+
+.card-body h3{
+  color: #2b1e16;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.card-body .item-category{
+  color: #97745e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.price-row{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.price-row span{
+  color: #2b1e16;
+  font-size: 22px;
+  font-weight:700;
+}
+
+.price-row button{
+  background: #b6663d;
+  color:white;
+  border:none;
+  border-radius: 6px;
+  padding: 10px 17px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.price-row button:hover{
+  background: #8f4829;
+  transform: translateY(-1px);
+}
+
+.empty-menu{
+  color: #746960;
+  grid-column: 1 / -1;
+  padding: 48px 0;
+  text-align: center;
+}
+
+@media (max-width: 640px){
+  .menu-page{
+    padding: 44px 20px;
+  }
+
+  .menu-hero{
+    margin-bottom: 32px;
+  }
+
+  .menu-hero h1{
+    font-size: 40px;
+  }
+
+  .menu-summary{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .menu-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .card img{
+    height: 240px;
+  }
+}
